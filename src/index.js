@@ -5,30 +5,30 @@ const app = express();
 
 app.get('/projects', (request, response) => {
     return response.json([
-        'Projeto 1',
-        'Projeto 2',
+        'Project 1',
+        'Project 2',
     ]);
 });
 
 app.post('/projects', (request, response) => {
     return response.json([
-        'Projeto 3',
-        'Projeto 4', 
-        'Proejto 5',
+        'Project 3',
+        'Project 4', 
+        'Project 5',
     ]);
 });
 
 app.put('/projects/:id', (request, response) => {
     return response.json([
-        'Projeto 5',
-        'Projeto 6',
+        'Project 5',
+        'Project 6',
     ]);
 });
 
 app.delete('/projects/:id', (request, response) => {
     return response.json([
-        'Projeto 7',
-        'Projeto 8',
+        'Project 7',
+        'Project 8',
     ]);
 });
 
