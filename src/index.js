@@ -6,29 +6,29 @@ const app = express();
 app.get('/projects', (request, response) => {
     return response.json([
         'Project 1',
-        'Project 2',
+        'Project 1',
     ]);
 });
 
 app.post('/projects', (request, response) => {
     return response.json([
-        'Project 3',
-        'Project 4', 
-        'Project 5',
+        'Project 1',
+        'Project 1', 
+        'Project 1',
     ]);
 });
 
 app.put('/projects/:id', (request, response) => {
     return response.json([
-        'Project 5',
-        'Project 6',
+        'Project 1',
+        'Project 1',
     ]);
 });
 
 app.delete('/projects/:id', (request, response) => {
     return response.json([
-        'Project 7',
-        'Project 8',
+        'Project 1',
+        'Project 1',
     ]);
 });
 
