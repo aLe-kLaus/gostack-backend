@@ -8,6 +8,16 @@ app.use(express.json());
 
 const projects = [];
 
+function LogRequests(request, response, next) {
+    const {method, url} = request;
+
+    const LogLabel = `[${method.toUpperCase()}] ${url}`;
+
+    console.log(LogLabel);
+}
+
+app.use(LogRequests);
+
 app.get('/projects', (request, response) => {
     const {title} = request.query;
 
